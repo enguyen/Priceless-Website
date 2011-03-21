@@ -1,3 +1,7 @@
+/**
+ * JS for the Priceless theme. Mostly handles background selection and resizing.
+ */
+
 $(document).ready(function(){
 		var bgImage = $('#background img');
 
@@ -5,10 +9,7 @@ $(document).ready(function(){
 		// These is the main reasons why we need JQuery.
 		$(window).resize(fixBg);
 		bgImage.load(fixBg);
-
-		// Set up random image.
-		var rand = Math.ceil(Math.random()*9);
-		bgImage.attr('src', 'images/bg/' + rand + '.jpg');
+		fixBg();
 });
 
 function fixBg() {
