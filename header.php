@@ -5,6 +5,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php
 	/*
@@ -67,6 +68,7 @@
 	<div id="header">
 		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 	</div>
+	<?php get_sidebar(); ?>
 	<div id="nav" role="navigation">
 		<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
 		<div class="skip-link screen-reader-text">

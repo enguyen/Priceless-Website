@@ -1,1 +1,12 @@
-A Wordpress theme for the 2011 Priceless Campout.
+A Wordpress theme for the 2011 Priceless Campout. Some notes on using it:
+
+Images on Pages: If you add images, size them to Medium and align them
+None. That will make a nice image that spans the whole text column. Landscape
+photos will look much better, so stick to those.
+
+Menu: is controlled through Navigation -> Menus. You can include any pages you
+like and leave the rest out. Reorder, etc.
+
+Right Sidebar: is controlled through Appearance -> Widgets. You can add or
+remove any widgets you like, here. In our installation, the Text widget is used
+to highlight important information, like the date of this year's event.
