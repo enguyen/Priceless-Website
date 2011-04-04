@@ -27,11 +27,16 @@ a:hover {
 }
 
 #background {
+		background-color: #333;
 		position: fixed;
 		top: 0px;
 		width: 100%;
 		height: 100%;
 		overflow: hidden;
+}
+
+#background img {
+		display: none;
 }
 
 #wrapper {
@@ -41,7 +46,7 @@ a:hover {
 		color: #eee;
 		max-width: 920px; /* minus 20px gutters on left and right */
 		min-width: 320px;
-		margin: 10px auto;
+		margin: 0px auto;
 		font-family: Georgia, Times New Roman, serif;
 		line-height: 150%;
 }
@@ -61,6 +66,15 @@ a:hover {
 
 #header a:hover {
     color: white;
+}
+
+#baroot {
+		position: absolute;
+		top: 5px;
+		right: 20px;
+		width: 30%;
+		height: 275px;
+		background: url('../images/baroot_2010_trimmed.png') no-repeat;
 }
 
 #nav {
@@ -104,7 +118,7 @@ a:hover {
 
 #sidebar {
 		float: right;
-		padding: 30px 0 0 20px;
+		padding: 220px 0 0 20px;
 		width: 30%; /* minus non-precise percentage for right gutter */
 }
 
@@ -213,6 +227,10 @@ h1.entry-title {
 }
 
 @media all and (max-device-width: 800px), all and (max-width: 800px) {
+		#baroot {
+				display: none;
+		}
+
     #wrapper {
 				max-width: 290px; /* minus 10px gutters on left and right */
 				min-width: 290px;

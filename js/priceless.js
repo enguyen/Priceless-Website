@@ -21,8 +21,10 @@ function fixBg() {
 		var bgImage = $('#background img');
 		imgRatio = bgImage.width()/bgImage.height();
 		if (winRatio > imgRatio) {
-				bgImage.css({'width':winWidth, 'height':''});
+				bgImage.css({'width':winWidth, 'height':(winWidth / imgRatio)});
 		} else {
-				bgImage.css({'width':'', 'height':winHeight});
-		}		
+				bgImage.css({'width':(winHeight * imgRatio), 'height':winHeight});
+		}
+
+		bgImage.fadeIn(1000);
 }
