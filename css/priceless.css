@@ -74,7 +74,7 @@ a:hover {
 		right: 20px;
 		width: 30%;
 		height: 275px;
-		background: url('../images/baroot_2010_trimmed.png') no-repeat;
+		background: url('../images/baroot11.png') no-repeat;
 }
 
 #nav {
@@ -191,6 +191,10 @@ h1.entry-title {
 
 .entry-utility, .entry-meta {
 		display: none;
+}
+
+.twtr-timeline:hover {
+		overflow-y: scroll;
 }
 
 .twtr-hd {
