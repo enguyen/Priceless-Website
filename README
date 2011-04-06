@@ -1,12 +1,60 @@
-A Wordpress theme for the 2011 Priceless Campout. Some notes on using it:
+This is a Wordpress theme for the 2011 Priceless Campout. The standard Wordpress
+Twenty Ten theme was used as a starting point.
 
-Images on Pages: If you add images, size them to Medium and align them
-None. That will make a nice image that spans the whole text column. Landscape
-photos will look much better, so stick to those.
+Here are notes on how to use it:
 
-Menu: is controlled through Navigation -> Menus. You can include any pages you
-like and leave the rest out. Reorder, etc.
+# How to awesome-ify the Priceless site
 
-Right Sidebar: is controlled through Appearance -> Widgets. You can add or
+## Images on Pages
+
+If you add images, size them to Medium and align them None. That will make a
+nice image that spans the whole text column. landscape photos will look much
+better, so stick to those.
+
+## Menu
+
+The site menu is controlled through Navigation -> Menus. You can include any
+pages you like and leave the rest out. Reorder, etc.
+
+## Right Sidebar
+
+The right sidebar is controlled through Appearance -> Widgets. You can add or
 remove any widgets you like, here. In our installation, the Text widget is used
 to highlight important information, like the date of this year's event.
+
+Note that there is both a “primary” and “secondary” widget area. The primary
+widget area currently just has the date label as mentioned above. The secondary
+widget area has our search box and Twitter feed. These are separated out into to
+widget areas so that in the narrow version of the site, we can hide all the
+stuff in the secondary widget area.
+
+## Twitter Feed
+
+As mentioned above, the Twitter feed is in the secondary widget area. Open it up
+to see the Javascript API call that pumps out the feed. If you can hack JS, you
+can mess with that directly. The tweets in the list are all the posts added as
+“Favorites” in the falseprofitllc Twitter account. Just log into that account
+and star/favorite Priceless-related tweets to make them show up there.
+
+## Backgrounds
+
+Every time a page is loaded on the site, a random image is chosen out of our
+“memories” collection and scaled to fit the background. Here’s how to curate
+that collection:
+
+   * To see the collection, to Pages, then edit the “Memories” page.(1) Click on
+the big gallery area in the editor and click the icon in the upper left, titled
+“Edit Gallery.” There are a couple other ways to get to this, as well. The
+Gallery tab contains all the background images.
+   * To delete, click the Gallery tab and then Show on any image to get to its
+delete button.
+   * To upload an image, click the From Computer tab and Select Files to
+upload. These will appear in the gallery.
+   * To create a background image, do your best to make it as tiny as
+possible. Resize the image to be 320px on its larger dimension. Blur the image
+Gaussian to 4px. And then “save for the web” using about 50% quality for your
+JPG file. Most files should fall between 15KB and 20KB with these settings.
+
+(1) The Memories page is just another page on the site. What gives it its
+  	special background-image-collecting powers is a custom field called
+  	“isMemoriesPage,” which is set to true.
