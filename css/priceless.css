@@ -11,14 +11,15 @@ h1, h2, h3, h4, h5, h6 {
 		font-family: fp, verdana, helvetica, sans-serif;
 		clear: left;
 		line-height: 1em;
+		margin: 30px 0 15px 0;
 }
 
 a {
-		color: white;
+		color: #eee;
 }
 
 a:hover {
-		color: #6f6;
+		color: #ffe56c;
 }
 
 @font-face {
@@ -64,10 +65,6 @@ a:hover {
 		text-transform: lowercase;
 }
 
-#header a:hover {
-    color: white;
-}
-
 #baroot {
 		position: absolute;
 		top: 5px;
@@ -80,8 +77,8 @@ a:hover {
 #nav {
 		text-align: right;
 		font-family: fp, verdana, helvetica, sans-serif;
-		font-size: 120%;
-		line-height: 150%;
+		font-size: 175%;
+		line-height: 125%;
 		float: right;
 		width: 16.66%;
 }
@@ -98,6 +95,7 @@ a:hover {
 
 #nav a:hover {
 		filter: alpha(opacity=100);
+		color: #ffe56c;
     -moz-opacity: 1;
     -khtml-opacity: 1;
     opacity: 1;
@@ -148,15 +146,6 @@ a:hover {
 		margin: 10px 0;
 }
 
-/*
-.xoxo, .xoxo a {
-		color: #bbb;
-}
-
-.xoxo:hover, .xoxo a:hover {
-		color: white;
-}
-*/
 #post, #container {
 		width: 50%;
 		margin-top: 20px;
@@ -189,6 +178,20 @@ h1.entry-title {
 		margin: 1em 0px;
 }
 
+.entry-content ul {
+		list-style: outside;
+		padding-left: 25px;
+}
+
+.entry-content ol {
+		list-style: decimal outside;
+		padding-left: 25px;
+}
+
+.entry-content li {
+		margin: 8px 0px;
+}
+
 .entry-utility, .entry-meta {
 		display: none;
 }
@@ -213,10 +216,24 @@ h1.entry-title {
 		padding: 6px 0 !important;
 }
 
+.twtr-doc a:hover {
+		color: #ffe56c;
+}
+
+.gallery-item {
+		width: 150px;
+		float: left;
+}
+
+.gallery br {
+		clear: left !important;
+}
+
 /* Use this style as the standard for full-width images. */
 .alignnone {
-   width: 100% !important;
-	 height: auto !important;
+		width: 98% !important;
+		height: auto !important;
+		border: 3px solid #999;
 }
 
 #footer {
