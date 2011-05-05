@@ -43,6 +43,10 @@ a:hover {
 #wrapper {
 		position: relative;
 		background: url('images/contentbg.png');
+		background-size: 100% 100%;
+		-moz-background-size: 100% 100%;
+		-moz-background-origin: border;
+  	background-origin: border-box;
 		padding: 10px 20px 20px 20px;
 		color: #eee;
 		max-width: 920px; /* minus 20px gutters on left and right */
