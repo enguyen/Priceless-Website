@@ -1,8 +1,13 @@
+<!-- These are the contents of the twitter script to be added as
+     a to the Widget to the sidebar.
+-->
+
 <script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
 new TWTR.Widget({
   version: 2,
-  type: 'faves',
+  type: 'search',
+  search: '#priceless2011',
   rpp: 10,
   interval: 6000,
   title: '',
@@ -30,5 +35,5 @@ new TWTR.Widget({
     toptweets: true,
     behavior: 'all'
   }
-}).render().setUser('falseprofitllc').start();
+}).render().start();
 </script>
